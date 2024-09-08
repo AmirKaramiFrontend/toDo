@@ -1,4 +1,3 @@
-import { Component } from "react";
 import styled from "styled-components";
 
 const StyledList = styled.ul`
@@ -9,7 +8,7 @@ const StyledList = styled.ul`
     width: 10rem;
 `;
 
-const List = function ({children}) {
+const List = function ({children }) {
     return <StyledList>{children}</StyledList>;
 }
 
