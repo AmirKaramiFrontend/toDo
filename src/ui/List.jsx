@@ -13,9 +13,5 @@ const List = function ({children}) {
     return <StyledList>{children}</StyledList>;
 }
 
-List.propTypes ={
-    children: Component,
-}
-
 
 export default List;

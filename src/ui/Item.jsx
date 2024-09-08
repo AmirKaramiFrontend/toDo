@@ -1,3 +1,4 @@
+import { Component } from "react";
 import styled from "styled-components";
 
 const StyledItem = styled.li`
@@ -15,13 +16,8 @@ const StyledItem = styled.li`
     }
 `;
 
-const Item = function({children, type}){
-    return <StyledItem type={type}>{children}</StyledItem>;
+const Item = function({children}){
+    return <StyledItem>{children}</StyledItem>;
 }
-
-Item.propTypes = {
-    children: Element || String,
-    type: String
-};
 
 export default Item;

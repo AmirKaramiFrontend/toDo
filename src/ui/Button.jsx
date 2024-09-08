@@ -20,10 +20,4 @@ const Button = function({children, onClick, disabled}){
    return <StyledButton onClick={onClick} disabled={disabled}>{children}</StyledButton>;
 }
 
-Button.propTypes ={
-    children: String,
-    onClick: Function,
-    disabled: Boolean
-}
-
 export default Button;
