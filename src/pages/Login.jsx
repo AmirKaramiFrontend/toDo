@@ -1,16 +1,31 @@
-import { Form } from "react-router-dom";
-import styled from "styled-components";
+import Form from "../ui/Form";
+import Input from "../ui/Input";
+import FormGroup from "../ui/FormGroup";
+import Label from "../ui/Label";
+import Button from "../ui/Button";
+import Heading from "../ui/Heading";
 
-const StyledForm = styled(Form)`
-    max-width: 35rem;
-    height: auto;
-    background-color: var(--color-light-grey);
-    margin: 20rem auto;
-`;
+
 
 const Login = function(){
-    return <StyledForm>
-    </StyledForm>
+    const handleLogin = function(e){
+        e.preventDefault();
+    }
+    return (
+            <Form>
+                <Heading as="h1">Login page</Heading>
+                <FormGroup>
+                    <Label>Username or email</Label>
+                    <Input />
+                </FormGroup>
+                <FormGroup>
+                    <Label>Password</Label>
+                    <Input />
+                </FormGroup>
+                
+                <Button type="primary" size="medium" onClick={handleLogin}>Login</Button>
+            </Form>
+    );
 }
 
 export default Login;

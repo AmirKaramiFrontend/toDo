@@ -4,14 +4,15 @@ import Menu from "../ui/Menu";
 
 const StyledHeader = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1rem 2rem;
 `;
 
 function Header (){
     return (
         <StyledHeader>
-            <Logo />
             <Menu />
+            <Logo />
         </StyledHeader>
     )
 }
