@@ -13,7 +13,7 @@ const Login = function(){
     }
     return (
             <Form>
-                <Heading as="h1">Login page</Heading>
+                <Heading as="h2">Sign in</Heading>
                 <FormGroup>
                     <Label>Username or email</Label>
                     <Input />
@@ -22,8 +22,9 @@ const Login = function(){
                     <Label>Password</Label>
                     <Input />
                 </FormGroup>
-                
-                <Button type="primary" size="medium" onClick={handleLogin}>Login</Button>
+                <FormGroup positionText="center">
+                    <Button type="primary" size="medium" onClick={handleLogin}>Login</Button>
+                </FormGroup>                
             </Form>
     );
 }

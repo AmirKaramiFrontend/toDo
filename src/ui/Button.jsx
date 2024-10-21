@@ -1,16 +1,15 @@
-import PropTypes from "prop-types";
 import styled from "styled-components"
 
 const backgroundColors = {
-    primary: '#7327ff',
-    warning: '#fce300',
-    primaryHover: '#5005dd',
-    warningHover: '#ffd000',
+    primary: 'var(--color-primary)',
+    warning: 'var(--color-warning)',
+    primaryHover: 'var(--color-primary-dark)',
+    warningHover: 'var(--color-warning-dark)',
 }
 
 const colors = {
-    primary: '#ffffff',
-    warning: '#333333'
+    primary: 'var(--color-white)',
+    warning: 'var(--color-dark)'
 }
 
 const size = {
@@ -28,6 +27,7 @@ const StyledButton = styled.button`
     outline: none;
     background-color: ${props => backgroundColors[props.type]};
     color: ${props => colors[props.type]};
+    transition: var(--all-transition);
    
 
     &:hover {
@@ -36,16 +36,8 @@ const StyledButton = styled.button`
     }
 `;
 
-const Button = function({children, onClick, disabled, type, size}){
+const Button = function({children, onClick, disabled , type, size}){
    return <StyledButton onClick={onClick} disabled={disabled} type={type} size={size}>{children}</StyledButton>;
 }
-
-Button.propTypes = {
-    children: PropTypes.string,
-    onClick: PropTypes.function,
-    disabled: PropTypes.boolean,
-    type: PropTypes.string,
-    size: PropTypes.size
-};
 
 export default Button;

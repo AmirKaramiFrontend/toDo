@@ -7,9 +7,16 @@ const GlobalStyled = createGlobalStyle`
     --larg-font: 1.8rem;
 
     --color-primary: #4d4dff;
+    --color-primary-dark: #5d00d6;
+    --color-warning: #ffc300;
+    --color-warning-dark: #ffa300;
+
     --color-white: #ffffff;
 
     --color-light-grey: #eeeeee;
+
+    --color-dark: #777777;
+    --all-transition: all .32s;
 }
 
 html,
@@ -19,10 +26,6 @@ body {
     margin: 0;
     font-size: 62.5%;
     background-color: var(--color-white);
-}
-
-* {
-    transition: all .1s;
 }
 
 a {

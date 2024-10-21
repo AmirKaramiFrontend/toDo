@@ -13,7 +13,7 @@ const Heading = function({ children, as }){
 }
 
 Heading.propTypes = {
-    children: PropTypes.function,
+    children: PropTypes.string,
     as: PropTypes.string
 }
 
