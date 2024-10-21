@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { styled } from 'styled-components';
 
 const StyledHeader = styled.div`
@@ -9,6 +10,11 @@ const StyledHeader = styled.div`
 
 const Heading = function({ children, as }){
     return <StyledHeader as={as}>{children}</StyledHeader>
+}
+
+Heading.propTypes = {
+    children: PropTypes.function,
+    as: PropTypes.string
 }
 
 
