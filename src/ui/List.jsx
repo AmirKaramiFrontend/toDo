@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 const StyledList = styled.ul`
     list-style: none;
-    background-color: #f1f1f1;
-    border: 1px solid #eee;
     padding: unset;
-    width: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
 `;
 
 const List = function ({children }) {

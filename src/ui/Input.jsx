@@ -9,8 +9,8 @@ const StyledInput = styled.input`
 
 `;
 
-const Input = function({type= 'text', disabled = false}){
-    return <StyledInput type={type} disabled={disabled} />
+const Input = function({type= 'text', disabled = false, onChange}){
+    return <StyledInput type={type} disabled={disabled} onChange={onChange} />
 }
 
 export default Input;

@@ -2,17 +2,8 @@ import styled from "styled-components";
 
 const StyledItem = styled.li`
     padding: .5rem 0;
-    text-align: center;
-    width: 100%;
-    &:not(:last-child){
-        margin-bottom: .5rem;
-        border-bottom: 1px solid #ccc;
-    }
-
-    &:first-child {
-        font-weight: bold;
-        font-size: 2rem;
-    }
+    text-align: center;   
+    font-size: var(--medium-font);
 `;
 
 const Item = function({children}){
