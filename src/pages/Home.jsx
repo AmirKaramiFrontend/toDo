@@ -1,5 +1,10 @@
+import Heading from "../ui/Heading";
+import ViewPortSection from "../ui/ViewPortSection";
+
 const Home = function(){
-    return <h1 className="">Home</h1>
+    return <ViewPortSection>
+        <Heading as="h1">Home</Heading>
+    </ViewPortSection>
 }
 
 export default Home;

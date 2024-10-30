@@ -4,6 +4,7 @@ import FormGroup from "../ui/FormGroup";
 import Label from "../ui/Label";
 import Button from "../ui/Button";
 import Heading from "../ui/Heading";
+import ViewPortSection from "../ui/ViewPortSection";
 
 
 
@@ -12,20 +13,28 @@ const Login = function(){
         e.preventDefault();
     }
     return (
-            <Form>
-                <Heading as="h2">Sign in</Heading>
+        <ViewPortSection>
+            <Form bgColor="rgba(182, 181, 181, 0.2)">
+                <FormGroup position="center">
+                    <Heading as="h2">Sign in</Heading>
+                </FormGroup>
                 <FormGroup>
-                    <Label>Username or email</Label>
+                    <Label>
+                        Username or email
+                    </Label>
                     <Input />
                 </FormGroup>
                 <FormGroup>
-                    <Label>Password</Label>
+                    <Label>
+                        Password
+                    </Label>
                     <Input />
                 </FormGroup>
-                <FormGroup positionText="center">
-                    <Button type="primary" size="medium" onClick={handleLogin}>Login</Button>
+                <FormGroup position="center">
+                    <Button type="primary" size="medium" space="medium" onClick={handleLogin}>Sign in</Button>
                 </FormGroup>                
             </Form>
+        </ViewPortSection>
     );
 }
 

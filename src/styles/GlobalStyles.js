@@ -12,6 +12,7 @@ const GlobalStyled = createGlobalStyle`
     --color-warning-dark: #ffa300;
 
     --color-white: #ffffff;
+    --color-black: #000000;
 
     --color-light-grey: #eeeeee;
 
@@ -21,9 +22,6 @@ const GlobalStyled = createGlobalStyle`
 
 html,
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     font-size: 62.5%;
     background-color: var(--color-white);
 }
@@ -34,13 +32,12 @@ a {
 }
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-a.active {
-    font-weight: 900;
-    color: var(--color-primary);
-}
+
 `;
 
 export default GlobalStyled;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types"
 
 const StyledForm = styled.form`
     width: 50rem;
@@ -10,14 +11,19 @@ const StyledForm = styled.form`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: ${props => props.bgColor};
 `;
 
-const Form = function({children}){
-      return  <StyledForm>
+const Form = function({children, bgColor}){
+      return  <StyledForm bgColor={bgColor}>
             {children}
         </StyledForm>;
 }
 
+Form.propTypes = {
+    children: PropTypes.any,
+    bgColor: PropTypes.string
+}
 
 
 export default Form;
